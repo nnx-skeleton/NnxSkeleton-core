@@ -1,0 +1,38 @@
+{
+  "name": "nnx-member/core",
+  "description": "Service Core",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Plitakov Dmitry",
+      "email": "plitakov94@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+  },
+  "require-dev": {
+    "fabpot/php-cs-fixer": "~1.11.0",
+    "phpunit/phpunit": "~4.8.0",
+    "phpunit/phpcov": "~2.0.0",
+    "satooshi/php-coveralls": "~1.0.0",
+   }, 
+   "psr-4": {
+      "Nnx\\Member\\Core\\": "src/"
+    },
+   "classmap": [
+      "./Module.php",
+      "src/"
+    ]
+  },
+   "autoload-dev": {
+     "psr-4": {
+       "Nnx\\Member\\Core\\PhpUnit\\Test\\": "test/phpunit/tests",
+       "Nnx\\Member\\Core\\PhpUnit\\TestData\\": "test/phpunit/_files"
+    },
+    "classmap": [
+      "./test/phpunit/Bootstrap.php",
+      "test/"
+    ]
+  }
+}
