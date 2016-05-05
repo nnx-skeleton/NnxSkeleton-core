@@ -1,39 +1,41 @@
 {
-  "name": "nnx-skeleton/core",
-  "description": "Service Core",
-  "type": "library",
-  "authors": [
-    {
-      "name": "Plitakov Dmitry",
-      "email": "plitakov94@gmail.com"
-    }
-  ],
-  "require": {
-    "php": ">=5.5.0"
-  },
-  
-  "require-dev": {
-    "fabpot/php-cs-fixer": "~1.11.0",
-    "phpunit/phpunit": "~4.8.0",
-    "phpunit/phpcov": "~2.0.0",
-    "satooshi/php-coveralls": "~1.0.0",
-    "zendframework/zend-loader": "~2.4.0"
-   }, 
-   "psr-4": {
-      "NnxSkeleton\\Core\\": "src/"
-    },
-   "classmap": [
-      "./Module.php",
-      "src/"
+    "name": "nnx-skeleton/core",
+    "description": "Service Core",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Plitakov Dmitry",
+            "email": "plitakov94@gmail.com"
+        }
     ],
-   "autoload-dev": {
-     "psr-4": {
-       "NnxSkeleton\\Core\\PhpUnit\\Test\\": "test/phpunit/tests",
-       "NnxSkeleton\\Core\\PhpUnit\\TestData\\": "test/phpunit/_files"
+    "require": {
+        "php": ">=5.5.0"
     },
-    "classmap": [
-      "./test/phpunit/Bootstrap.php",
-      "test/"
-    ]
-  }
+
+    "require-dev": {
+        "fabpot/php-cs-fixer": "~1.11.0",
+        "phpunit/phpunit": "~4.8.0",
+        "phpunit/phpcov": "~2.0.0",
+        "satooshi/php-coveralls": "~1.0.0",
+        "zendframework/zend-loader": "~2.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NnxSkeleton\\Core\\": "src/"
+        },
+        "classmap": [
+            "./Module.php",
+            "src/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NnxSkeleton\\Core\\PhpUnit\\Test\\": "test/phpunit/tests",
+            "NnxSkeleton\\Core\\PhpUnit\\TestData\\": "test/phpunit/_files"
+        },
+        "classmap": [
+            "./test/phpunit/Bootstrap.php",
+            "test/"
+        ]
+    }
 }
