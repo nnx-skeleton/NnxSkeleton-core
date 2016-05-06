@@ -1,6 +1,6 @@
 <?php
 
-namespace NnxSkeleton\Core;
+namespace NnxSkeletonMember\Core;
 
 return [
 
