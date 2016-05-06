@@ -1,5 +1,5 @@
 {
-    "name": "nnx-skeleton/core",
+    "name": "nnx-skeleton-member/core",
     "description": "Service Core",
     "type": "library",
     "authors": [
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "NnxSkeleton\\Core\\": "src/"
+            "NnxSkeletonMember\\Core\\": "src/"
         },
         "classmap": [
             "./Module.php",
@@ -31,8 +31,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "NnxSkeleton\\Core\\PhpUnit\\Test\\": "test/phpunit/tests",
-            "NnxSkeleton\\Core\\PhpUnit\\TestData\\": "test/phpunit/_files"
+            "NnxSkeletonMember\\Core\\PhpUnit\\Test\\": "test/phpunit/tests",
+            "NnxSkeletonMember\\Core\\PhpUnit\\TestData\\": "test/phpunit/_files"
         },
         "classmap": [
             "./test/phpunit/Bootstrap.php",
