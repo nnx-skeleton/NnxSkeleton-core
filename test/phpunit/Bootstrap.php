@@ -12,7 +12,7 @@ chdir(__DIR__);
 /**
  * Class Bootstrap
  *
- * @package NnxSkeletonMember\Member\PhpUnit\Test
+ * @package NnxSkeletonMember\Core\PhpUnit\Test
  */
 class Bootstrap
 {
