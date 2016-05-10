@@ -9,11 +9,19 @@ namespace NnxSkeletonMember\Core;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
+use Nnx\ModuleOptions\ModuleConfigKeyProviderInterface;
 
 class Module implements
     AutoloaderProviderInterface,
-    ConfigProviderInterface
+    ConfigProviderInterface,
+    ModuleConfigKeyProviderInterface
 {
+    /**
+     * Имя секции в конфиги приложения отвечающей за настройки модуля
+     *
+     * @var string
+     */
+    const CONFIG_KEY = 'nnx_core';
 
     /**
      * Имя модуля
@@ -23,8 +31,17 @@ class Module implements
     const MODULE_NAME = __NAMESPACE__;
 
     /**
+     * @return string
+     */
+    public function getModuleConfigKey()
+    {
+        return static::CONFIG_KEY;
+    }
+
+    /**
      * @return array
      */
+
     public function getAutoloaderConfig()
     {
         return array(
